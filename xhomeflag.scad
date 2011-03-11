@@ -1,0 +1,14 @@
+translate([0,0,25])
+rotate([-90,0,0])
+difference() 
+{
+	cube([20,25,13]);
+	translate([-1,-1,1])
+		cube([20+2,20+1,7]);
+	translate([15,7,-1])
+		cylinder(r=2,h=15);
+	translate([-1,-1,7])
+		cube([10+1,20+1,7]);
+	translate([10,-1,-1])
+		cube([10+1,20+1,7]);
+}
